@@ -1,5 +1,12 @@
 import csv
-from features import Event
+
+def sortLog(eventsUnsorted):
+    
+    events = sorted(eventsUnsorted, key=lambda x: x.time)
+    
+    return events
+    
+
 
 def getMax(vals):
     maxVal = 0

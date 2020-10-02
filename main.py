@@ -1,4 +1,4 @@
-from utils import getMax,loadLog,getLogStart,saveResultsInCSV,getAvg
+from utils import getMax,loadLog,sortLog,getLogStart,saveResultsInCSV,getAvg
 from features import Event,Resource,ResourceTS,getTrainResources,getTestResources
 from features import getEvents,getResource,getSetOfResources,getSetOfTasks
 from features import getSetOfDataValues
@@ -11,15 +11,25 @@ from ann import fitANNModelWithHPO
 from sklearn.preprocessing import MinMaxScaler
 from configuration import *
 
-#1.1 - read the log from csv (events sorted by time)
+#1.1 - read the log from csv
+# log (csv) with mandatory attributes: 
+# case,task,resource,time,duration
+# followed by optional data attriutes
+# only 'complete' events
 logdata = loadLog(log)
 
 #1.2 - transform log data into a list of Event objects
-#mandatory: case,task,resource,time,duration
-#optional: list of data attributes
-events = getEvents(logdata)
+eventsUnsorted = getEvents(logdata)
 
-#1.3 - log start
+# 1.3 -  sort events by time
+events = []
+if sort_log == 0:
+    for ev in eventsUnsorted:
+        events.append(ev)
+else:
+    events = sortLog(eventsUnsorted)
+
+#1.4 - log start
 logStart = getLogStart(events)
 
 #2.1 - get a set of resources

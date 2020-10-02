@@ -1,9 +1,9 @@
-#Events in the input log are sorted by time
 log = 'C:\\python\\ActivityRecommender\\data\\bpic12.csv'
 #log = 'C:\\python\\ActivityRecommender\\data\\bpic17_6m.csv'
 
 results_out = 'C:\\python\\ActivityRecommender\\output\\bpic12-xgb-AO.csv'
 
+sort_log = 1 #0 - no, 1 - yes
 use_ml_model = 0 #0 - xgboost, 1 - nn
 
 # [AO,AF,AD,DO,DF,DA] 

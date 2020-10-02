@@ -1,0 +1,17 @@
+min_tasks,min_tasks_test,use_generalists,use_new_resources,taskSet,taskFreq,taskDur,dataSet,dataFreq,dataAvg,dataAttrCat,dataAttrAvg,timeSplit,numTrainR,numTestR,confidence_threshold,Recommendations,Accuracy
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,60,68,33,0.0,1.0,0.696969696969697
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,60,68,33,0.25,1.0,0.696969696969697
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,60,68,33,0.5,0.8787878787878788,0.7586206896551724
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,60,68,33,0.75,0.21212121212121213,0.8571428571428571
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,90,68,20,0.0,1.0,0.75
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,90,68,20,0.25,1.0,0.75
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,90,68,20,0.5,0.95,0.7894736842105263
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,90,68,20,0.75,0.3,1.0
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,120,68,10,0.0,1.0,0.7
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,120,68,10,0.25,1.0,0.7
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,120,68,10,0.5,1.0,0.7
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,120,68,10,0.75,0.1,1.0
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,150,68,4,0.0,1.0,0.75
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,150,68,4,0.25,1.0,0.75
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,150,68,4,0.5,1.0,0.75
+1,5,0,0,1,0,0,0,0,0,usedCatData-,usedNumData-,150,68,4,0.75,0.5,1.0
